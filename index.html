@@ -8,7 +8,7 @@
     <title>DS | 15</title>
 
     <!-- Bootstrap -->
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ds.css" rel="stylesheet">
 
@@ -22,32 +22,113 @@
 </head>
 
 <body>
-    <div class="jumbotron fullscreen" data-stellar-background-ratio="0.5">
+    <div class="jumbotron" id="welcome" data-stellar-background-ratio="0.5">
         <div class="container" id="splash">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="text-center">
                         <img src="img/logo.png" class="img-responsive center-block" alt="DS Logo" width="150">
                         <h3>Design Summer 2015</h3>
+                        <br>
                         <h3>Connecting world class interns interested in design to each other and the greater design community.</h3>
+                        <br>
+                        <br>
+                        <a href="#" class="btn btn-primary btn-lg outline"><strong>Subscribe</strong></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="container text-center">
-        <h4>Stay tuned for updates!</h4><br>
-        <p>Copyright &copy; 2015 Eric Li and Jonathan Zong.</p>
+
+    <div class="container text-center info">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>About</h2>
+                <br>
+                <p>The purpose of Design Summer is to organize events for Bay Area interns interested in design. Design has become more and more prevalent in an increasing number of industries. Over the course of a summer, we plan to organize lunches, tours, workshops, and expeditions around the Bay Area in order to allow us to give those interested the opportunity to interact with industry leading designers and gain exposure to the thriving design scene in San Francisco and its surroundings.</p>
+                <br>
+            </div>
+        </div>
     </div>
+
+    <div class="jumbotron" id="ggb" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="text-center">
+                        <h2>One summer. Infinite possibilities.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="container text-center info">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>FAQ</h2>
+                <br>
+                <div class="row text-left">
+                    <div class="col-md-6">
+                        <dl>
+                            <dt>Do you have a schedule?</dt>
+                            <dd>As we get closer to the summer, we'll post a schedule of events here. Stay tuned!</dd>
+                            <br>
+                            <dt>What if I'm not a current intern?</dt>
+                            <dd>Because space at events is limited, we're only allowing current interns to participate. Sorry!</dd>
+                        </dl>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <dl>
+                            <dt>Who are you?</dt>
+                            <dd>We're two undergraduates at Princeton University that are hoping to make guacamole all summer.</dd>
+                        </dl>
+
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="ggb" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-550">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="text-center">
+                        <h2>What will you discover?</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container text-center footer">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Supporters</h2>
+                <br>
+                <h2>Interested in sponsoring or hosting events?<br> Contact us at dsgnsummer@gmail.com.</h2>
+                <br>
+                <br>
+                <hr>
+                <p><small>&#9825; 2015 <a href="http://www.princeton.edu/~eyli/" target="_blank">Eric Li</a> and <a href="http://jonathanzong.com/" target="_blank">Jonathan Zong</a>.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
 
     <script>
-    $.stellar();
+        if ($( window ).width() > 1100)
+            $.stellar();
     </script>
-    
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 </body>
