@@ -13,10 +13,12 @@
     padding-top: 3%;
     padding-bottom: 4%;
     color: #fff;
+
 }
 
 #welcome {
     background-image: url("../img/night.jpg");
+    
 }
 * {
     -webkit-border-radius: 0 !important;
