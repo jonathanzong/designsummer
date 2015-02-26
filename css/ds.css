@@ -16,6 +16,14 @@
 
 }
 
+#plane {
+    background-image: url("../img/plane.jpg");
+    padding-top: 3%;
+    padding-bottom: 4%;
+    color: #fff;
+
+}
+
 #welcome {
     background-image: url("../img/night.jpg");
     
@@ -29,9 +37,12 @@
 }
 
 p {
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
+#faq {
+    font-size: 13pt;
+}
 #splash {
     padding-top: 10%;
     padding-bottom: 15%;
@@ -61,6 +72,8 @@ p {
     color: #ddd;
     border-color: #ddd;
 }
+
+
 .btn-primary.outline:active, .btn-primary.outline.active {
     border-color: #ddd;
     color: #ddd;
