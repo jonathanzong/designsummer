@@ -32,12 +32,23 @@
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
-    font-family: 'Lato', sans-serif;
-    
+    font-family: 'Open Sans', sans-serif;   
 }
 
-p {
+p, p * {
+    font-family: 'Gentium Book Basic', serif;
     font-size: 14pt;
+}
+
+a.btn {
+    background-color: white;
+    outline-color: white;
+    color: #67596E;
+    font-size: 1.8em;
+}
+
+.fa-facebook-official {
+    font-size: 2em;
 }
 
 #faq {
