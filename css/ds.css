@@ -35,8 +35,7 @@
     font-family: 'Open Sans', sans-serif;   
 }
 
-p, p * {
-    font-family: 'Gentium Book Basic', serif;
+p {
     font-size: 14pt;
 }
 
