@@ -4,9 +4,9 @@ var count = 150;
 // Create a symbol, which we will use to place instances of later:
 var path = new Path.Circle({
 	center: [0, 0],
-	radius: 15,
+	radius: 10,
 	fillColor: 'white',
-	strokeColor: 'grey'
+	strokeColor: 'black'
 });
 
 var symbol = new Symbol(path);
@@ -21,7 +21,6 @@ for (var i = 0; i < count; i++) {
 
 // The onFrame function is called up to 60 times a second:
 function onFrame(event) {
-    console.log(view.size);
 	// Run through the active layer's children list and change
 	// the position of the placed symbols:
 	for (var i = 0; i < count; i++) {
@@ -29,7 +28,7 @@ function onFrame(event) {
 		
 		// Move the item 1/20th of its width to the right. This way
 		// larger circles move faster than smaller circles:
-		item.position.x += item.bounds.width / 30;
+		item.position.x += item.bounds.width / 20;
 
 		// If the item has left the view on the right, move it back
 		// to the left:
@@ -37,8 +36,4 @@ function onFrame(event) {
 			item.position.x = -item.bounds.width;
 		}
 	}
-}
-
-function onResize(event) {
- paper.view.draw();   
 }
