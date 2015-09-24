@@ -1,14 +1,3 @@
-//$(document).ready(function () {
-//    var canvas = document.getElementById("mainCanvas");
-//    var cont = document.getElementById("mainContainer");
-//
-//    function setCanvas() {
-//        canvas.width = $(cont).width();
-//        canvas.height = $(cont).height() + parseFloat($(cont).css('padding-top')) + parseFloat($(cont).css('padding-bottom'));
-//    };
-//    $(window).resize(setCanvas);
-//    setCanvas();
-//});
 paper.install(window);
 $(document).ready(function () {
     // Get a reference to the canvas object
@@ -25,21 +14,14 @@ $(document).ready(function () {
     // The amount of circles we want to make:
     var count = 150;
 
-    // Create a symbol, which we will use to place instances of later:
-    var path = new Path.Circle({
-        center: [0, 0],
-        radius: 15,
-        fillColor: 'white',
-        strokeColor: 'grey'
-    });
-
-    var symbol = new Symbol(path);
-
     // Place the instances of the symbol:
     for (var i = 0; i < count; i++) {
-        var center = [Math.random() * view.size.width, Math.random() * view.size.height];
-        var placedSymbol = symbol.place(center);
-        placedSymbol.scale(i / count);
+        var path = new Path.Circle({
+            center: [Math.random() * view.size.width, Math.random() * view.size.height],
+            radius: 15,
+        });
+        path.scale(Math.random() + 0.2);
+        path.fillColor = new Color(Math.random(), Math.random(), Math.random(), 0.4);
     }
     view.draw();
 
@@ -51,7 +33,7 @@ $(document).ready(function () {
 
             // Move the item 1/20th of its width to the right. This way
             // larger circles move faster than smaller circles:
-            item.position.x += item.bounds.width / 30;
+            item.position.x += item.bounds.width / 20;
 
             // If the item has left the view on the right, move it back
             // to the left:
